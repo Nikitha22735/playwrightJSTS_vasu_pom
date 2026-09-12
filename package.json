@@ -1,0 +1,17 @@
+{
+  "name": "playwright_pom_ts_vasu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "homeTest": "npx playwright test --grep home --headed",
+    "loginTest": "npx playwright test --grep login --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0"
+  }
+}
