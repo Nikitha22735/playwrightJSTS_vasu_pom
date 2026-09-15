@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "homeTest": "npx playwright test --grep home --headed",
-    "loginTest": "npx playwright test --grep login --headed"
+    "loginTest": "npx playwright test --grep login --headed",
+    "dataHandling": "npx playwright test --grep dh --headed"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,9 @@
   "devDependencies": {
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.5.0"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.2",
+    "xlsx": "^0.18.5"
   }
 }
