@@ -6,3 +6,4 @@ local: git
 git add filepath  or git add .
 git commit -m "message"
 git push
+///////////
