@@ -16,7 +16,7 @@ export class homePage{
     }
 
     async validateAmazonHomeLink(){
-        await expect(this.amazonHomeLink).toBeVisible();
+        await expect(this.amazonHomeLink).not.toBeVisible();
     }
     
 }

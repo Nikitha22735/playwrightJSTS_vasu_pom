@@ -12,7 +12,7 @@ export class loginPage{
         this.emailTextBox = page.getByRole('textbox', { name: 'Enter mobile number or email' })
         this.continueBtn = page.getByRole('button', { name: 'Continue' })
         this.passwordTextBox = page.getByRole('textbox', { name: 'Password' })
-        this.signInBtn = page.getByRole('button', { name: 'Sign in' })
+        this.signInBtn = page.getByRole('button', { name: 'Sign in123' })
         this.incorrectPasswordMessage = page.getByText('Your password is incorrect')
         
     }

@@ -1,0 +1,47 @@
+TC-01: Verify search results page loads for a valid keyword
+
+Objective:
+Validate that a valid search term shows relevant product results on the Amazon results screen.
+
+Preconditions:
+- User is on the Amazon.in homepage.
+- Internet connectivity is available.
+
+Steps:
+1. Open https://www.amazon.in/
+2. Enter the keyword "iphone" in the search box.
+3. Click the Search button.
+4. Wait until the results page loads.
+
+Expected Result:
+- The page URL changes to a search results page.
+- The result summary text is displayed, for example: "1-16 of over 50,000 results for \"iphone\"".
+- At least one product card is visible on the page.
+- The page title contains the searched keyword.
+
+Actual observation on the live app:
+- Search for "iphone" returned a results page with the result count text visible and the sort dropdown visible.
+
+TC-02: Verify sorting results by price (Low to High)
+
+Objective:
+Validate that the user can sort displayed products from lowest price to highest price.
+
+Preconditions:
+- User is on the Amazon results page for "iphone".
+
+Steps:
+1. Open Amazon.in and search for "iphone".
+2. Locate the Sort By dropdown.
+3. Select "Price: Low to High".
+4. Wait for the products to refresh.
+
+Expected Result:
+- The selected sort option is updated to "Price: Low to High".
+- The product list reorders according to lowest price first.
+- The first visible product has the lowest price among the current result set.
+- The page remains stable and no error message is shown.
+
+Actual observation on the live app:
+- The results page displays a visible Sort By section and supports sorting options such as Featured and Price: Low to High.
+

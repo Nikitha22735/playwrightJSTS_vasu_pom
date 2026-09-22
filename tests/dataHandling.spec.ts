@@ -19,7 +19,7 @@ test('handling csv file', async()=>{
 })
 
 import XLSX from 'xlsx'
-test('handling excel file @dh', async()=>{
+test('handling excel file', async()=>{
     let workBook = XLSX.readFile('testData\\sample_creds.xlsx')
    let sheetInfo = workBook.Sheets['Sheet2']
    let data = XLSX.utils.sheet_to_json(sheetInfo)
@@ -27,3 +27,18 @@ test('handling excel file @dh', async()=>{
 
 })
 
+test('handling cli', async()=>{
+  let username = process.env.username12 || 'defaultUser'
+  let password = process.env.password12 || 'defaultPassword'
+  console.log(username)
+
+})
+// npm install dotenv --save-dev
+import dotenv from 'dotenv'
+test('handling env @dh', async()=>{
+   dotenv.config({path:process.env.dataEnvPath || '.env'}) 
+  let username = process.env.username3 || 'defaultUser'
+  let password = process.env.password3 || 'defaultPassword'
+  console.log(username)
+
+})
